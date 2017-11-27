@@ -1,0 +1,92 @@
+.operate{
+    padding-right: 2%;
+}
+.all-user{
+    width: 100%;
+}
+.userBox{
+    width: 18%;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    float: left;
+    margin: 1%;
+    min-width: 270px;
+}
+
+/*.userBox:hover{
+    border-color: red;
+}*/
+
+.userBorder{
+    width: 100%;
+    height: auto;
+    border: 1px solid #DFDFDF;
+    text-align: center;
+    box-shadow: 0 0 5px #ccc;
+    min-width: 250px;
+
+}
+.userBox.red{
+    border-color: red;
+}
+
+.userBorder>img{
+    width: 40%;
+    /*height: 40%;*/
+    margin-bottom: 10px;
+
+
+
+}
+.userContent{
+    clear: both;
+}
+.userContent>p{
+    font-size: 16px;
+    /*font-family: "微软雅黑";*/
+    font-weight: 200;
+    text-align: center;
+    min-width: 110px;
+    padding: 1%;
+
+
+}
+.property{
+    width: 50%;
+    float: left;
+}
+.userPop_c{
+    clear: both;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.userPop_c>input{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background: #fff none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.userPop_c>label{
+    line-height: 34px;
+    text-align: right;
+}
+.userPop_c>select{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background: #fff none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+}

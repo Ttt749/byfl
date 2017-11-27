@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family:"Microsoft YaHei";
+    color: #656565;
+}
+html,body{
+    background-color: #eee;
+}
+.background .quote{
+    width:600px;
+    border: 1px solid white;
+    border-left-color:#ce4844;
+    border-left-width: 3px;
+    background-color:#ffffff;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: inherit;
+}
+.background{
+    background-color: white;
+    padding: 50px;
+}
+.titles{
+    margin-left: 30px;
+
+}
+.headline{
+    font-family: "微软雅黑", "华文宋体";
+    font-size: 16px;
+    font-weight: bold;
+}
+.secondText{
+    font-size: 14px;
+    font-family: "微软雅黑", "华文宋体";
+    padding: 10px 0;
+}
+.table-bordered{
+    text-align: center;
+    margin:10px 30px;
+}

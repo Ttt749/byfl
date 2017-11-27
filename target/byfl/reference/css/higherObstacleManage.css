@@ -1,0 +1,346 @@
+.boldTitle{
+    border-bottom: 2px solid #3887bc;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 31px;
+    padding-bottom: 3px;
+}
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family:"Microsoft YaHei";
+    color: #656565;
+}
+
+.airportAndrunway .quote{
+    width:600px;
+    border: 1px solid white;
+    border-left: 3px #ce4844;
+    background-color:#ffffff;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: inherit;
+}
+
+/*.runwayhight {*/
+/*background-color: #eee;*/
+/*}*/
+.runwayEnter,.runwayHight{
+    border: 2px dashed #eee;
+    padding:15px;
+    margin-bottom: 20px;
+}
+.airportAndrunway h2{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 40px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.airportAndrunway h3{
+    font-size: 16px;
+}
+.radio-group{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.runwayEnter{
+    border-bottom: 1px dashed #eee;
+}
+.runwayHight select{
+    width:50px;
+    height: 25px;
+    border: 1px solid #D28282;
+    border-radius:3px;
+}
+.runwaytable input{
+    width:20px;
+    height: 17px;
+}
+
+.addItem{
+    color: #64a8dc;
+
+}
+.runwaySecond{
+    margin-top: 50px;
+    display: none;
+}
+.runwayFirst{
+    margin-top: 30px;
+}
+.save{
+    float: right;
+    margin-right: 32px;
+}
+html,body{
+    background-color: #eee;
+}
+.background{
+    background-color: white;
+    padding: 50px;
+}
+
+
+.file-preview{
+    width: 95%;
+}
+.file-caption-main{
+    width: 95%;
+}
+.file-drop-zone{
+    /*height: 530px;*/
+}
+.kv-upload-progress{
+    width: 79%;
+}
+.kv-file-upload {
+    display: none;
+}
+.fileinput-upload-button{
+    display: none;
+}
+.chooseRadio{
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+.fileContent{
+    width: 90%;
+    margin: 20px 20px;
+}
+
+.row>div{
+    line-height: 34px;
+}
+.row>input{
+    border: none;
+    background-color: white;
+    width: auto;
+
+}
+
+
+.valid_message{
+    color: red;
+}
+
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.ku{
+    width: 100%;
+    height: 34px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color:#333;
+    /*margin:50px auto;*/
+    position:relative;
+}
+.ku>span{
+    line-height: 32px;
+    padding-left: 15px;
+}
+.ku>span>input{
+    padding-left: 5px;
+    line-height: 30px;
+    margin-right: 50px;
+    width:80%;
+}
+.ku>input{
+    padding: 0 5px;
+    display: block;
+    width: 150px;
+    height: 21px;
+    line-height: 22px;
+    overflow: hidden;
+    color:#000;
+    font-size: 14px;
+}
+.xiala{
+    width: 450px;
+    height: 360px;
+    background: #ffffff;
+    position: absolute;
+    top:36px;
+    left: -2px;
+    display: none;
+    border: 1px solid #c9cbce;
+    z-index: 999;
+    color:#666;
+    font-size: 14px;
+}
+.xiala:before, .xiala:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    left: 20px;
+    z-index: 999999;
+}
+.xiala:before{
+    border-color: rgba(181, 70, 70, 0) rgba(16, 15, 15, 0) #fff;
+    top: -17px;
+    z-index: 9999999;
+}
+.xiala:after{
+    border-color: transparent transparent #c9cbce;
+    top: -20px;
+}
+.xiala>h1{
+    width: 430px;
+    font-size: 14px;
+    font-weight: normal;
+    color:#333;
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+}
+.xiala>h1>input{
+    display: block;
+    float: right;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #00a6e2;
+    margin-right: 10px;
+    color: #fff;
+    margin-top: 8px;
+}
+.xiala>div{
+    width: 78px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+    margin: 5px;
+    background: #f5f5f5;
+    position: relative;
+    color:#333;
+}
+.xiala>div>p{
+    display: none;
+    width: 370px;
+    height: 220px;
+    background: #fff;
+    position: relative;
+    padding: 10px 5px;
+    top:10px;
+    left: -1px;
+    z-index: 1;
+    border: 2px solid #c9cbce;
+}
+.xiala>div>p:before, .xiala>div>p:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    left: 20px;
+    z-index: 999999;
+}
+.xiala>div>p:before{
+    border-color: rgba(181, 70, 70, 0) rgba(16, 15, 15, 0) #fff;
+    top: -17px;
+    z-index: 9999999;
+}
+.xiala>div>p:after{
+    border-color: transparent transparent #c9cbce;
+    top: -20px;
+}
+.xiala>div>p>div{
+    margin: 5px;
+    float: left;
+    position: relative;
+    padding: 0px 10px;
+    background: #f5f5f5;
+    color:#333;
+}
+.xiala>div>p>div>p{
+    width: 270px;
+    min-height: 30px;
+    padding: 5px;
+    position: absolute;
+    top:45px;
+    left:-105px;
+    display: none;
+    z-index: 2;
+    background: #fff;
+    border: 2px solid #c9cbce;
+}
+.xiala>div>p>div>p:before, .xiala>div>p>div>p:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    left: 125px;
+    z-index: 999999;
+}
+.xiala>div>p>div>p:before{
+    border-color: rgba(181, 70, 70, 0) rgba(16, 15, 15, 0) #fff;
+    top: -17px;
+    z-index: 9999999;
+}
+.xiala>div>p>div>p:after{
+    border-color: transparent transparent #c9cbce;
+    top: -20px;
+}
+.xiala>div>p>div>p>span{
+    margin: 4px;
+    padding: 5px 6px;
+    float: left;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    background: #f5f5f5;
+    color:#333;
+}
+#province,#city,#county{
+    display: none;
+}

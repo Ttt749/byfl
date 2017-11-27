@@ -1,0 +1,231 @@
+/*大盒子*/
+.content_y{
+    margin-left: 13%;
+    /*margin-top:80px;*/
+}
+
+/*body{*/
+    /*background-color: #FCFBF6;*/
+
+/*}*/
+
+
+.line{
+    min-width: 320px;
+}
+.parameterSelect{
+    min-width: 1020px;
+}
+/*选择源*/
+.sourceType{
+    width: 33%;
+    min-width: 250px;
+    /*text-align: center;*/
+    float: left;
+}
+
+.leftDiv {
+    width:150px;
+    float:left;
+    height:30px;
+    line-height:33px;
+}
+
+.rightDiv{
+    margin-top: 30px;
+}
+select{
+    width: 150px;
+    height: 30px;
+}
+/*中间图片*/
+.logoImg{
+    width: 20%;
+    min-width:200px;
+    /*text-align: center;*/
+    height: auto;
+    float: left;
+
+}
+.logoImg>img{
+    width: 160px;
+    height: 120px;
+}
+/*选择目标*/
+.targetType{
+    width: 33%;
+    text-align: center;
+    float: left;
+    padding-left: 3%;
+}
+
+
+.contentInput{
+    min-width: 1030px;
+}
+.sourceInput{
+    width: 20%;
+    min-width: 250px;
+    text-align: center;
+    float: left;
+    margin-top: 100px;
+
+}
+/*输入源坐标*/
+.sourceText{
+    margin: 15%;
+    padding: 0 20px;
+    min-width: 300px;
+}
+.sourceText>p{
+    float: left;
+    width: 10px;
+    font-family: "微软雅黑";
+}
+.text{
+    height: 30px;
+}
+
+.radioSelect{
+    width: 20%;
+    text-align: center;
+    margin-left: 105px;
+    float: left;
+    margin-top: 100px;
+    min-width: 250px;
+
+}
+
+.changeButton>input{
+    /*width: 80%;*/
+    height: 50px;
+    border: 1px solid #BCBCBC;
+    border-radius: 5px;
+    background-color: #99FFFF;
+    margin-top: 20px;
+}
+
+.targetOut{
+    width: 20%;
+    margin-left: 105px;
+    text-align: center;
+    float: left;
+    margin-top: 100px;
+    min-width: 250px;
+
+}
+.groupBox{
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+    position: relative;
+}
+.groupBoxText{
+    display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+}
+.btn-lg{
+    /*width: 80%;*/
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+
+.tab-pane{
+    margin-top: 50px;
+}
+
+
+.processCancel{
+    float: right;
+    margin-right: -25px;
+    margin-top:-10px;
+    font-size: 20px;
+    color: #5e5e5e;
+
+}
+.processCancel>input{
+    background-color: white;
+    border: none;
+}
+
+.progress-bar-outer{
+    background: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 0  10px rgba(209,219,231,0.7);
+    width: 90%;
+}
+.progress-bar-outers{
+    background: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 0  10px rgba(209,219,231,0.7);
+    width: 90%;
+}
+
+.progress{
+    height: 10px;
+    margin: 0;
+    overflow: visible;
+    border-radius: 50px;
+    background: #eaedf3;
+    box-shadow: inset 0 1px  10px rgba(0,0,0,0.1);
+}
+.progress .progress-bar{
+    border-radius: 50px;
+    position: relative;
+    animation: animate-positive 30s;
+}
+.progress-bar-info{
+    float: left;
+}
+@-webkit-keyframes animate-positive{
+    0%    { width: 0%;}
+    20%   { width: 3%;}
+    30%   { width: 9%;}
+    50%   { width: 15%;}
+    70%   { width: 25%;}
+    100%  { width: 90%;}
+}
+@keyframes animate-positive{
+    0%    { width: 0%;}
+    20%   { width: 3%;}
+    30%   { width: 9%;}
+    50%   { width: 15%;}
+    70%   { width: 25%;}
+    100%  { width: 90%;}
+}
+
+
+#comeSave{
+    float: right;
+    width: 100px;
+    margin-bottom: 30px;
+}
+.form-group{
+    float: right;
+}
+.dataOutButton{
+    padding-right: 10px;
+}

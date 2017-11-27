@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="snnu.dao.GraduateCityDao">
+    <select id="queryByIdGC" resultMap="getGraduateCity" parameterType="java.lang.Integer">
+        SELECT
+              th_graduate.graduate_id,
+              th_graduate.graduate_name,
+              th_graduate.graduate_sex,
+              th_graduate.graduate_grade,
+              th_graduate.graduate_school,
+              th_graduate.graduate_city_id,
+              th_city.city_id,
+              th_city.city_name
+        FROM
+              th_graduate,
+              th_city
+        WHERE th_graduate.graduate_city_id=#{cityId}
+              AND th_city.city_id=#{cityId}
+              AND th_graduate.graduate_city_id=th_city.city_id
+    </select>
+    <resultMap id="getGraduateCity" type="snnu.entity.GraduateCity">
+        <id column="city_id" jdbcType="INTEGER" property="cityId"/>
+        <result  property="cityName" column="city_name"/>
+        <collection property="graduates" ofType="snnu.entity.Graduate">
+            <id  property="graduateId" column="graduate_id"/>
+            <result property="graduateName" column="graduate_name"/>
+            <result property="graduateSex" column="graduate_sex"/>
+            <result property="graduateGrade" column="graduate_grade"/>
+            <result property="graduateSchool" column="graduate_school"/>
+            <result property="graduateCityId" column="graduate_city_id"/>
+        </collection>
+    </resultMap>
+    <select id="queryAllGC" resultMap="getGraduateCity">
+        SELECT
+              th_graduate.graduate_id,
+              th_graduate.graduate_name,
+              th_graduate.graduate_sex,
+              th_graduate.graduate_grade,
+              th_graduate.graduate_school,
+              th_graduate.graduate_city_id,
+              th_city.city_id,
+              th_city.city_name
+        FROM
+              th_graduate,
+              th_city
+    </select>
+</mapper>

@@ -1,0 +1,145 @@
+/*body{*/
+    /*background-color: #FCFBF6;*/
+
+/*}*/
+
+.leftText {
+    width:150px;
+    float:left;
+    height:25px;
+    line-height:25px;
+}
+
+
+.rightInput{
+    margin-top: 30px;
+}
+.rightInput>input{
+    width: 200px;
+    height: 30px;
+}
+
+.rightInput>select{
+    width: 200px;
+    height: 30px;
+}
+.line{
+    width: 500px;
+    height: auto;
+}
+.baseText{
+    float: left;
+    width: 50%;
+}
+
+.dateContent{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.file-drop-zone-title{
+    height: 550px;
+    display: none;
+}
+.file-preview{
+    width: 76%;
+    height: 550px;
+}
+
+.file-drop-zone{
+    height: 92%;
+}
+
+
+.kv-file-upload{
+    display: none;
+}
+.fileinput-upload-button{
+    display: none;
+}
+.content .leval{
+    height: 180%;
+}
+.saveAndClear{
+    width: 80%;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.obstractleAdd{
+    margin: 50px auto;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    margin-top: -50px;
+    margin-bottom: 5px;
+}
+.obstractle{
+  padding-top: 100px;
+}
+.obstractleBorder{
+    width: 70%;
+    margin: 20px auto;
+    min-width: 850px;
+    border: 1px solid #CCCCCC;
+    background-color: #F7F5F6;
+}
+.position{
+    left: 500px;
+}
+.obstractleMain{
+    /*margin-top: 50px;*/
+    min-width: 730px;
+    margin-left: 10%;
+    clear: both;
+}
+.attachment{
+    line-height: 100px;
+}
+.cutLine2{
+    width: 75%;
+    height: 1px;
+    background-color: #E6E6E6;
+    margin-top: 230px;
+}
+.high_y{
+    clear: both;
+}
+
+.obstactle-delete{
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+
+.table-bordered{
+    text-align: center;
+}
+.notDisplay{
+    display: none;
+}
+.tableColor{
+    font-weight: bold;
+}
+
+.fileContent{
+    border:1px solid #cccccc;
+    padding: 20px;
+
+}
+.row{
+    line-height: 30px;
+}
+.lookInform{
+    margin-left: 50px;
+}
+.center{
+    left: -30px;
+}
+.hoverTr:hover{
+    background-color: #e0e0e0;
+}
+

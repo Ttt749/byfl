@@ -1,0 +1,21 @@
+
+#pan3Table th,#pan3Table td,
+#pan4Table th,#pan4Table td{
+    text-align: center;
+}
+
+#pan3Table td,
+#pan4Table td{
+    font-size: 18px;
+}
+
+
+#backupOk,#undoOk{
+    float: right;
+    width:80px;
+    height:40px;
+    margin-bottom:30px;
+    font-size:16px;
+    letter-spacing: 2px;
+}
+

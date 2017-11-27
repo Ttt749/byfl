@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="snnu.dao.CityDao">
+    <select id="queryById" resultType="snnu.entity.City">
+        SELECT th_city.city_id,th_city.city_name,th_city.city_people
+        FROM th_city
+        WHERE th_city.city_id=#{cityId}
+    </select>
+    <select id="queryAll" resultType="snnu.entity.City">
+        SELECT th_city.city_id,th_city.city_name,th_city.city_people
+        FROM th_city
+    </select>
+    <insert id="insert">
+        INSERT 
+        INTO th_city
+        VALUES (#{city.cityId},#{city.cityName},#{city.cityPeople})
+    </insert>
+    <update id="update">
+        UPDATE th_city
+        SET th_city.city_name=#{city.cityName},
+            th_city.city_people=#{city.cityPeople}
+        WHERE th_city.city_id=#{city.cityId}
+    </update>
+    <delete id="delete">
+        DELETE
+        FROM th_city
+        WHERE th_city.city_id=#{cityId}
+    </delete>
+</mapper>

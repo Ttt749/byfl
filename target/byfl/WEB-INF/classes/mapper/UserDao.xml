@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="snnu.dao.UserDao">
+    <select id="queryByName" resultType="snnu.entity.User">
+        SELECT user_name,user_pwd,user_root
+        FROM th_user
+        WHERE user_name=#{userName}
+    </select>
+    <select id="queryAll" resultType="snnu.entity.User">
+        SELECT user_name,user_pwd,user_root
+        FROM th_user
+    </select>
+    <insert id="insert">
+        INSERT
+        INTO th_user
+        VALUE (#{user.userName},#{user.userPwd},#{user.userRoot})
+    </insert>
+    <delete id="delete">
+        DELETE
+        FROM th_user
+        WHERE th_user.user_name=#{userName}
+    </delete>
+    <update id="update">
+        UPDATE th_user
+        SET th_user.user_pwd=#{user.userPwd},th_user.user_root=#{user.userRoot}
+        WHERE th_user.user_name=#{user.userName}
+
+    </update>
+    <!--<select id="queryByUser" resultType="snnu.entity.User">-->
+        <!--SELECT user_name,user_pwd,user_root-->
+        <!--FROM th_user-->
+        <!--WHERE 1=1-->
+        <!--<if test="#{user.userName}!=null and #{user.userName}!=''">-->
+               <!--AND user_name=#{user.userName}-->
+        <!--</if>-->
+        <!--<if test="#{user.userRoot}!=0">-->
+            <!--AND user_root=#{user.userRoot}-->
+        <!--</if>-->
+    <!--</select>-->
+</mapper>

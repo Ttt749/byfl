@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="snnu.dao.GraduateDao">
+    <select id="queryById" resultType="snnu.entity.Graduate">
+        SELECT
+              th_graduate.graduate_id,
+              th_graduate.graduate_name,
+              th_graduate.graduate_sex,
+              th_graduate.graduate_grade,
+              th_graduate.graduate_school,
+              th_graduate.graduate_city_id
+        FROM  th_graduate
+        WHERE th_graduate.graduate_id=#{graduateId}
+    </select>
+    <select id="queryAll" resultType="snnu.entity.Graduate">
+        SELECT
+              th_graduate.graduate_id,
+              th_graduate.graduate_name,
+              th_graduate.graduate_sex,
+              th_graduate.graduate_grade,
+              th_graduate.graduate_school,
+              th_graduate.graduate_city_id
+        FROM  th_graduate
+    </select>
+    <insert id="insert">
+        INSERT
+        INTO th_graduate
+        VALUES ( #{graduate.graduateId},
+                  #{graduate.graduateName},
+                  #{graduate.graduateSex},
+                  #{graduate.graduateGrade},
+                  #{graduate.graduateSchool},
+                  #{graduate.graduateCityId})
+    </insert>
+    <update id="update">
+        UPDATE th_graduate
+        SET
+            th_graduate.graduate_name=#{graduate.graduateName},
+            th_graduate.graduate_sex=#{graduate.graduateSex},
+            th_graduate.graduate_grade=#{graduate.graduateGrade},
+            th_graduate.graduate_school=#{graduate.graduateSchool},
+            th_graduate.graduate_city_id=#{graduate.graduateCityId}
+        WHERE th_graduate.graduate_id=#{graduate.graduateId}
+    </update>
+    <delete id="delete">
+        DELETE
+        FROM th_graduate
+        WHERE th_graduate.graduate_id=#{graduateId}
+    </delete>
+</mapper>
